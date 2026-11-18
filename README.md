@@ -3,7 +3,7 @@
 The website for **Vento**, a fictional Italian car brand with three prototype cars designed in code and modelled in Blender.
 It includes a live 3D configurator: pick a model, a paint and wheels, turn the car and open its doors in the browser.
 
-> **Live demo:** turn on GitHub Pages (Settings → Pages → Source: GitHub Actions) and the site deploys itself on every push.
+> **Live demo:** hosted on Cloudflare Pages (link coming soon). Every push to `main` redeploys the site.
 
 ![Vento GT](public/img/gt_hero.jpg)
 
@@ -40,7 +40,7 @@ npm run dev
 ```
 Then open the link it prints (usually http://localhost:5173).
 
-Build for hosting (the base path is relative, so GitHub Pages works as-is; `.github/workflows/deploy.yml` builds and publishes it automatically):
+Build for hosting (on Cloudflare Pages: build command `npm run build`, output directory `dist`):
 ```bash
 npm run build      # output in dist/
 ```
